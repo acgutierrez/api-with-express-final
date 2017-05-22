@@ -146,3 +146,17 @@ ul.rel-results {
     margin-top:70px;
     border-radius:5px;
 }
+
+.dropDiv {
+  border:1px solid red;
+  width:90px;
+  height:90px;
+  float:left;
+}
+
+.ebookDiv {
+  border:1px solid green;
+  width:90px;
+  height:90px;
+  float:left;
+}

@@ -21,6 +21,7 @@ html(lang='en')
       div(layout='row', layout-align='space-between center')
         span Sort by:
         select.md-no-underline(ng-model='order', placeholder='Price')
+          option(value='') Price
           option(value='saleInfo.listPrice.amount') low to high
           option(value='-saleInfo.listPrice.amount') high to low
         select.md-no-underline(ng-model='filter', placeholder='Ebooks')
