@@ -13,23 +13,8 @@ html(lang='en')
   
       
 .container-fluid.outerdiv
-<<<<<<< HEAD
   .animated.zoomInRight
-    .input-group.search-bar
-      input.form-control(type='text', ng-model='search', ng-model-options='{ debounce: 800 }', onclick='select()', placeholder='Enter book title', autofocus='')
-      span.input-group-addon.bar-style
-        i.glyphicon.glyphicon-search
-      div(layout='row', layout-align='space-between center')
-        span Sort by:
-        select.md-no-underline(ng-model='order', placeholder='Price')
-          option(value='') Price
-          option(value='saleInfo.listPrice.amount') low to high
-          option(value='-saleInfo.listPrice.amount') high to low
-        select.md-no-underline(ng-model='filter', placeholder='Ebooks')
-          option(value='full') All books
-          option(value='free-ebooks') Free books
-          option(value='paid-ebooks') Paid books
-=======
+  
   .input-group.search-bar
     input.form-control(type='text', ng-model='search', ng-model-options='{ debounce: 800 }', onclick='select()', placeholder='Enter book title', autofocus='')
     span.input-group-addon.bar-style
@@ -38,7 +23,7 @@ html(lang='en')
     center
       span Nothing to search ...
   div.animated.zoomInRight(ng-if='bookInfo', ng-hide='search == false')
->>>>>>> a474bfb8e76c8d3695286288f84c9be24eb42bfe
+
     #main-info.col-sm-8
       img.thumbnail.animated.flip.movie-poster(ng-src='{{bookInfo.imageLinks.smallThumbnail}}')
       span.span-outer
